@@ -1,0 +1,15 @@
+spring:
+    datasource:
+    # 내꺼 url
+        url: jdbc:mariadb://fourwarddb.ckeuidy6ynlc.ap-northeast-2.rds.amazonaws.com:3306/fourwarddb?userUnicode=true&characterEncoding=UTF-8
+        username: fourwarddb
+        password: fourwarddb
+        sql-script-encoding: UTF-8
+       
+    jpa:
+        
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MariaDBDialect
